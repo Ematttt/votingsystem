@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTING SYSTEM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="https://via.placeholder.com/80" alt="User Avatar" class="user-avatar">
+            <h3 class="user-name">Student Name</h3>
+            <p class="user-role">Student</p>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li>
+                    <a href="#" id="voting-toggle"><i class="fas fa-poll"></i> Voting <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown" id="voting-dropdown">
+                        <li><a href="#">Position 1</a></li>
+                        <li><a href="#">Position 2</a></li>
+                        <li><a href="#">Position 3</a></li>
+                        <li><a href="#">Position 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i>Results</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to the Election Dashboard</h1>
+        <p>Track the election process and cast your vote.</p>
+        <div class="chart-container">
+            <canvas id="electionChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
